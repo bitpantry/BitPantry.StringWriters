@@ -36,7 +36,7 @@ namespace BitPantry.StringWriters
                 if (string.IsNullOrEmpty(lines.Last())) lines.Remove(lines.Last());
 
                 foreach (var ln in lines)
-                    WriteLine(ln);
+                    OnAppend(ln);
 
             }
         }
