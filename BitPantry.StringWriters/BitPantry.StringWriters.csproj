@@ -40,12 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IAppendWriterCollection.cs" />
+    <Compile Include="IConsolidatedStringWriterCollection.cs" />
     <Compile Include="Implementation\Console\ConsoleAppendWriter.cs" />
     <Compile Include="Implementation\Console\ConsoleWrapper.cs" />
     <Compile Include="ConsolidatedStringWriter.cs" />
     <Compile Include="AppendStringWriter.cs" />
-    <Compile Include="Implementation\Console\StandardConsoleAppendWriterCollection.cs" />
+    <Compile Include="Implementation\Console\StandardConsoleWriterCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
