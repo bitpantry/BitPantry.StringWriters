@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace BitPantry.StringWriters.Implementation.Console
 {
-    public class StandardConsoleAppendWriterCollection
+    public class StandardConsoleAppendWriterCollection : IAppendWriterCollection
     {
-        public ConsoleAppendWriter Standard { get; private set; }
-        public ConsoleAppendWriter Warning { get; private set; }
-        public ConsoleAppendWriter Error { get; private set; }
-        public ConsoleAppendWriter Debug { get; private set; }
-        public ConsoleAppendWriter Verbose { get; private set; }
+        public AppendStringWriter Standard { get; private set; }
+        public AppendStringWriter Warning { get; private set; }
+        public AppendStringWriter Error { get; private set; }
+        public AppendStringWriter Debug { get; private set; }
+        public AppendStringWriter Verbose { get; private set; }
 
-        public ConsoleAppendWriter GreyAccent { get; private set; }
-        public ConsoleAppendWriter BlueAccent { get; private set; }
-        public ConsoleAppendWriter GreenAccent { get; private set; }
+        public AppendStringWriter GreyAccent { get; private set; }
+        public AppendStringWriter BlueAccent { get; private set; }
+        public AppendStringWriter GreenAccent { get; private set; }
 
         public StandardConsoleAppendWriterCollection()
         {
