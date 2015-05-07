@@ -14,9 +14,9 @@ namespace BitPantry.StringWriters.Implementation.Console
         public ConsolidatedStringWriter Debug { get; private set; }
         public ConsolidatedStringWriter Verbose { get; private set; }
 
-        public ConsolidatedStringWriter GreyAccent { get; private set; }
-        public ConsolidatedStringWriter BlueAccent { get; private set; }
-        public ConsolidatedStringWriter GreenAccent { get; private set; }
+        public ConsolidatedStringWriter Accent1 { get; private set; }
+        public ConsolidatedStringWriter Accent2 { get; private set; }
+        public ConsolidatedStringWriter Accent3 { get; private set; }
 
         public StandardConsoleWriterCollection()
         {
@@ -26,9 +26,9 @@ namespace BitPantry.StringWriters.Implementation.Console
             Debug = new ConsoleAppendWriter(ConsoleColor.White);
             Verbose = new ConsoleAppendWriter(ConsoleColor.DarkGray);
             
-            GreyAccent = new ConsoleAppendWriter(ConsoleColor.Gray, ConsoleColor.DarkGray);
-            BlueAccent = new ConsoleAppendWriter(ConsoleColor.White, ConsoleColor.Blue);
-            GreenAccent = new ConsoleAppendWriter(ConsoleColor.Green, ConsoleColor.DarkGreen);
+            Accent1 = new ConsoleAppendWriter(ConsoleColor.Gray, ConsoleColor.DarkGray);
+            Accent2 = new ConsoleAppendWriter(ConsoleColor.White, ConsoleColor.Blue);
+            Accent3 = new ConsoleAppendWriter(ConsoleColor.Green, ConsoleColor.DarkGreen);
         }
     }
 }
