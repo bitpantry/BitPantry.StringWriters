@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace BitPantry.StringWriters.Implementation.Console
 {
-    public class StandardConsoleAppendWriterCollection : IAppendWriterCollection
+    public class StandardConsoleWriterCollection : IConsolidatedStringWriterCollection
     {
-        public AppendStringWriter Standard { get; private set; }
-        public AppendStringWriter Warning { get; private set; }
-        public AppendStringWriter Error { get; private set; }
-        public AppendStringWriter Debug { get; private set; }
-        public AppendStringWriter Verbose { get; private set; }
+        public ConsolidatedStringWriter Standard { get; private set; }
+        public ConsolidatedStringWriter Warning { get; private set; }
+        public ConsolidatedStringWriter Error { get; private set; }
+        public ConsolidatedStringWriter Debug { get; private set; }
+        public ConsolidatedStringWriter Verbose { get; private set; }
 
-        public AppendStringWriter GreyAccent { get; private set; }
-        public AppendStringWriter BlueAccent { get; private set; }
-        public AppendStringWriter GreenAccent { get; private set; }
+        public ConsolidatedStringWriter GreyAccent { get; private set; }
+        public ConsolidatedStringWriter BlueAccent { get; private set; }
+        public ConsolidatedStringWriter GreenAccent { get; private set; }
 
-        public StandardConsoleAppendWriterCollection()
+        public StandardConsoleWriterCollection()
         {
             Standard = new ConsoleAppendWriter();
             Warning = new ConsoleAppendWriter(ConsoleColor.Yellow);
